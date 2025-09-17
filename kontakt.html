@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styl.css" type="text/css" />
+        <meta name="description" content="Kontakt politické strany NašeZemě" />
+        <meta name="keywords" content="Politická strana, NašeZemě, Naše země, našezemě, kontakt" />
+        <meta name="author" content="NašeZEMĚ" />
+        <link rel="shortcut icon" href="obrazky/log.png" />
+        <title>Kontakt - Naše Země</title>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <h1>Naše<span>ZEMĚ</span></h1>
+                <small>Ti, co chtějí něco dělat</small>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="lide.html">Vaši lidé</a></li>
+                    <li  class="aktivni"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <header>
+                <h1>Kontaktní informace pro zájemce</h1>
+            </header>
+            <section>
+                <div class="kont">
+                <p>Dvořákovo gymnázium a Střední odborná škola Ekonomická
+                <br/>Kralupy nad Vltavou
+                <br>Rezervace: +420 720 350 720
+                <br><div id="contact-info" style="color: orange; text-decoration: underline; cursor: pointer;" onclick="copyToClipboard()">zajemci@nasezeme.cz</div>
+                <br>Po - Pá: 8:00 - 16:00
+                <br>So - Ne: 8:00 - 12:00
+                </p>
+                
+                </div>
+            </section>
+            <div class="cistic"></div>
+        </article>
+       
+    
+        <footer>
+            Made by &copy;NašeZEMĚ
+        </footer>
+        <script>
+            function copyToClipboard() {
+                var copyText = document.getElementById("contact-info").innerText;
+                navigator.clipboard.writeText(copyText).then(function() {
+                    alert("Kontakt byl zkopírován do schránky.");
+                }, function(err) {
+                    alert("Nastala chyba při kopírování: ", err);
+                });
+            }
+        </script>
+        </body>
+
+</html>
